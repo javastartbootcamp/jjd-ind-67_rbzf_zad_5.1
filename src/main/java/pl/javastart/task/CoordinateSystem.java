@@ -30,12 +30,12 @@ public class CoordinateSystem {
         if (x == 0 && y == 0) {
             return " lezy w srodku ukladu wspolrzednych.";
         }
-        if (x != 0 && y == 0) {
-            return " lezy na osi X ukladu wspolrzednych.";
-        }
-        if (x == 0 && y != 0) {
+        if (x == 0) {
             return " lezy na osi Y ukladu wspolrzednych.";
+        } else {
+            return " lezy na osi X ukladu wspolrzednych.";
+
         }
-        return null;
+
     }
 }
